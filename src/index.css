@@ -1,4 +1,8 @@
 body {
+  /*background:#2c3e50;*/
+  /*background: #f1c40f;*/
+  /*background: grey;*/
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -11,3 +15,901 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+#root{
+  /*margin: 2rem;*/
+  background: white;
+  
+}
+#transparentBack{
+  display: none;
+  margin-top: -3rem;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: #181818;
+  opacity: 0.5;
+}
+#dyna{
+  /*background: #f5f5f5;*/
+  /*background: url('./images/libImg2.jpg') no-repeat;
+  background-size: cover;*/
+  /*background: #e84118;*/
+  background: repeating-linear-gradient(45deg,#344860,#001a39 400px);
+  height: 70vh;
+  border: 6px solid white;
+  width: 30vw;
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  display: none;
+  /*left: 2rem;*/
+  left: 35%;
+  margin-top: 6rem;
+  /*margin: auto;*/
+}
+#dyna2{
+  height: 70vh;
+  width: 30vw;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 6px solid white;
+  position: fixed;
+  z-index: 5;
+  display: grid;
+  display: none;
+  left: 35%;
+  margin-top: 6rem;
+  background:#e84118;
+
+}
+#container{
+  /*background: #2c3e50;*/
+  width: 100%;
+  display: grid;
+  grid-template-rows:auto auto auto;
+}
+#header{
+  padding: 5px;
+  display:grid;
+  grid-template-columns: 8% 68% 8% 8% 8%;
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid white;
+  background:#e84118;
+  /*background: #FD7272;*/
+}
+#libImg{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: auto;
+  cursor: pointer;
+}
+#search{
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+  text-align: center;
+  /*width: 50rem;*/
+
+}
+#home{
+  margin: auto;
+  font-family: sans-serif;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+#home::after{
+  content: '';
+  display:grid;
+  width: 0;
+  height: 2px;
+  background:black;
+  transition: width .3s;
+}
+#home:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+#login{
+  margin:auto;
+  font-family: sans-serif;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+/*#wlcmAdmn{
+  margin:auto;
+  font-family: sans-serif;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}*/
+#wlcmAdmn{
+  margin: auto;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+#login::after{
+  content: '';
+  display:grid;
+  width: 0;
+  height: 2px;
+  background:black;
+  transition: width .3s;
+}
+#login:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+#books{
+  margin:auto;
+  font-family: sans-serif;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+#books::after{
+  content: '';
+  display:grid;
+  width: 0;
+  height: 2px;
+  background:black;
+  transition: width .3s;
+}
+#books:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+#middle{
+  /*background:linear-gradient(to bottom, #ffff99 0%, #333300 100%);*/
+  background: repeating-linear-gradient(45deg,#344860,#001a39 400px);
+  height: 80vh;
+  text-align: center;
+    
+}
+#nav{
+  /*background:#3498db;*/
+  background: white;
+  position: fixed;
+  z-index: 20;
+  display: none;
+  margin-left: 78rem;
+  height: 35vh;
+  width: 10vw;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.1);
+  transition: transform 0.5s;
+}
+#nav p:hover{
+  transform: scale(1.1);
+  z-index: 100;
+  background: #25bcff;
+  box-shadow: 0 5px 25px rgba(0,0,0,.1);
+}
+#logout{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+#student{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+#vStudent{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+#aBook{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+#sBook{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+#iBook{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+#rBook{
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-align: left;
+}
+/*#welcome{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 5rem;
+  text-align: center;
+  animation: text 2s infinite;
+  margin: 0px;
+  
+}*/
+#welcome{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg,white,black,white);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+#libImg2{
+  height: 20rem; 
+  width: 25rem;
+  /*margin-left: 32rem;
+  margin-top: 1rem;*/
+}
+/*#welcome2{
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  animation: text 3s 1;
+  margin: 0px;
+}*/
+/*@keyframes text{
+  0%{
+    color: black;
+    
+  }
+  100%{
+    color: brown;
+    
+  }
+}*/
+#footer{
+  background: #e84118;
+  /*background: #FD7272;*/
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+#footer1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#about{
+  font-family: sans-serif;
+  margin: 0;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#about1{
+  font-family: sans-serif;
+  margin: 0;
+  margin-left: 4rem;
+  color: white;
+  font-weight: bold;
+}
+#follow{
+  font-family: sans-serif;
+  margin: 0;
+  /*margin-left: 12rem;*/
+  text-align: center;
+  margin-top: 0.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#img{
+  /*margin-left:18.5rem;*/
+  text-align: center;
+  margin-bottom: 0;
+}
+#fb{
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+#tweet{
+  height: 2rem;
+  width: 2rem;
+  margin-left:0.5rem;
+  cursor: pointer;
+}
+#lkdin{
+  height: 2rem;
+  width: 2rem;
+  margin-left:0.5rem;
+  cursor: pointer;
+}
+#copyright{
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
+#title{
+  list-style-type: none;
+  text-align: center;
+  color:white;
+}
+#csBooks{
+  /*list-style-type: none;*/
+  color:black;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+#elcBooks{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+#mecBooks{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+#commBooks{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+#magBooks{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+#cs{
+  border-right: 2px solid black;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+#elc{
+  border-right: 2px solid black;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+#mec{
+  border-right: 2px solid black;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+#comm{
+  border-right: 2px solid black;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+#mag{
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+#cs1{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#elc1{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#mec1{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#comm1{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#mag1{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#booksData{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+#cross{
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+#cross2{
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+#cross3{
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+#adm{
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 8rem;
+  color: white;
+  text-decoration: underline;
+}
+#admUser{
+  text-align: center;
+  margin: 16px 0;
+}
+#admUser i{
+  width:26px;
+  color: white;
+}
+#admPass{
+  text-align: center;
+  margin: 16px 0;
+}
+#admPass i{
+  width:26px;
+  color: white;
+}
+#aLogin{
+  margin-left: 12rem;
+}
+#stu{
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+#book{
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+#issue{
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  margin-top: 5rem;
+}
+#return{
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+  margin-top: 5rem;
+}
+#stuTable{
+  margin-top: 2rem;
+}
+#stuTable label{
+  font-family: sans-serif;
+  color:black;
+  font-weight: bold;
+}
+#addStu{
+  margin-top: 1.5rem;
+}
+#bookTable{
+  margin-top: 2rem;
+}
+#bookTable label{
+  font-family: sans-serif;
+  color:black;
+  font-weight: bold;
+}
+#addBook{
+  margin-top: 2rem;
+}
+#issueTable{
+  margin-top: 2rem;
+}
+#issueTable label{
+  font-family: sans-serif;
+  color:black;
+  font-weight: bold;
+}
+#issueBook{
+  margin-top: 2rem;
+}
+#returnTable{
+  margin-top: 2rem;
+}
+#returnTable label{
+  font-family: sans-serif;
+  color:black;
+  font-weight: bold;
+}
+#returnBook{
+  margin-top: 2rem;
+}
+#showTable td{
+  border: 2px solid black;
+}
+#showTable th{
+  border: 2px solid black;
+}
+#showTable{
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+#load{
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 5rem;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#load2{
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  margin-left: 19rem;
+  margin-top: 8rem;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+
+
+
+
+
+#menu{
+  display: none;
+}
+#menuBar{
+  display: none;
+}
+#nav1{
+  display: none;
+}
+#menuBooks{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:450px){
+  html{
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+  body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  #root{
+    margin: 0px;
+  }
+  #middle{
+    width:100vw;
+    
+  }
+  #container{
+    width: 100vw;
+    height: 100vh;
+  }
+  #welcome{
+    font-size: 2rem;
+  }
+  #libImg2{
+    height: 15rem;
+    width: 18rem;
+    margin-top: 3rem;
+    /*margin-left: 4.1rem;
+    margin-top: 5rem;*/
+  }
+  #search{
+    display: none;
+  }
+  #home{
+    display: none;
+  }
+  #login{
+    display: none;
+  }
+  #books{
+    display: none;
+  }
+  #header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 3rem;
+    
+  }
+  #libImg{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 8rem;
+  }
+  #footer{
+    height: 14vh;
+  }
+  #about{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  #about1{
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+
+  }
+  #copyright{
+    font-weight: bold;
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  #follow{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  #menu{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 0.2rem;
+    margin-right: auto;
+  }
+  #menuBar{
+    display: block;
+    position: fixed;
+    margin-left: auto;
+    /*background:brown;*/
+    background:linear-gradient(to bottom, white 0%,black 100%);
+    height: 80vh;
+    width: 0;
+    transition: 0.5s;
+    z-index: 1;
+    /*border: 2px solid black;*/
+  }
+  #menuButton{
+    display: none;
+    text-align: center;
+    margin-top: 2rem;
+    color: #130f40;
+  }
+  #menuButton p{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1.5px solid white;
+  }
+  #menuBooks{
+    display: none;
+  }
+  #menuBooks p{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background:white;
+  }
+  #cs{
+    display: none;
+    width: 100vw;
+    border-right: none;
+  }
+  #elc{
+    display: none;
+    width: 100vw;
+    border-right: none;
+  }
+  #mec{
+    display: none;
+    width: 100vw;
+    border-right: none;
+  }
+  #comm{
+    display: none;
+    width: 100vw;
+    border-right: none;
+  }
+  #mag{
+    display: none;
+    width: 100vw;
+    border-right: none;
+  }
+  #load{
+    margin-left: 8rem;
+  }
+  #dyna{
+    display: none;
+    width: 80vw;
+    height: 70vh;
+    left: 10%;
+    margin-top: 4.5rem;
+    /*background:#e84118;*/
+    background: repeating-linear-gradient(45deg,#344860,#001a39 400px);
+    border: 4px solid white;
+  }
+  #aLogin{
+    margin-left: 6rem;
+  }
+  #adm{
+    margin-top: 4rem;
+  }
+  /*#wlcmAdmn2{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }*/
+  #wlcmAdmn2{
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+  }
+  #nav1{
+    display: none;
+    margin-left: 2rem;
+    margin-top: -5rem;
+    height: 42vh;
+    width: 45vw;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+    position: fixed;
+    background: white;
+  }
+  #student1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #vStudent1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #aBook1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #sBook1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #iBook1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #rBook1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #logout1{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  #dyna2{
+    display: none;
+    height: 70vh;
+    width: 85vw;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 4px solid black;
+    position: fixed;
+    display: grid;
+    display: none;
+    left: 0%;
+    margin-top: 5rem;
+    background:#e84118;
+  }
+  #load2{
+    margin-left: 8rem;
+  }
+
+}
+
