@@ -19,7 +19,7 @@ import axios from 'axios';
                          /*document.getElementById('login').insertAdjacentHTML('afterend',`
                          <p id="wlcmAdmn">${localStorage.getItem('aUname')}</p>`)*/
                          document.getElementById('login').insertAdjacentHTML('afterend',`
-                         <img id="wlcmAdmn" src=${require('./images/user.jpg')}/>`)
+                         <img id="wlcmAdmn" src=${require('./images/user.jpg')}>`)
                          }
                          /*document.getElementById('login').insertAdjacentHTML('afterend',`
                          <img id="wlcmAdmn" src=${require('./images/user.jpg')}/>`)*/

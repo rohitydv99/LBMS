@@ -14,7 +14,7 @@ import axios from 'axios';
                             /*document.getElementById('login1').insertAdjacentHTML('afterend',`
                             <p id="wlcmAdmn2">${localStorage.getItem('aUname')}</p>`)*/
                             document.getElementById('login1').insertAdjacentHTML('afterend',`
-                            <p id="wlcmAdmn3"><img id="wlcmAdmn2" src=${require('./images/user.jpg')}/></p>`)
+                            <p id="wlcmAdmn3"><img id="wlcmAdmn2" src=${require('./images/user.jpg')}></p>`)
                          
                         }
                        /* else if(window.outerWidth>450){

@@ -39,6 +39,8 @@ code {
   border: 6px solid white;
   width: 30vw;
   position: fixed;
+  overflow-y: auto;
+  overflow-x: auto;
   z-index: 10;
   display: grid;
   display: none;
@@ -59,7 +61,8 @@ code {
   display: none;
   left: 35%;
   margin-top: 6rem;
-  background:#e84118;
+  /*background:#e84118;*/
+  background: repeating-linear-gradient(45deg,#344860,#001a39 400px);
 
 }
 #container{
@@ -521,26 +524,26 @@ code {
 #stu{
   font-family: sans-serif;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 #book{
   font-family: sans-serif;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 #issue{
   font-family: sans-serif;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: underline;
   margin-top: 5rem;
 }
 #return{
   font-family: sans-serif;
   text-align: center;
-  color: black;
+  color: white;
   text-decoration: underline;
   margin-top: 5rem;
 }
@@ -549,7 +552,7 @@ code {
 }
 #stuTable label{
   font-family: sans-serif;
-  color:black;
+  color:indianred;
   font-weight: bold;
 }
 #addStu{
@@ -560,7 +563,7 @@ code {
 }
 #bookTable label{
   font-family: sans-serif;
-  color:black;
+  color:indianred;
   font-weight: bold;
 }
 #addBook{
@@ -571,7 +574,7 @@ code {
 }
 #issueTable label{
   font-family: sans-serif;
-  color:black;
+  color:indianred;
   font-weight: bold;
 }
 #issueBook{
@@ -582,17 +585,17 @@ code {
 }
 #returnTable label{
   font-family: sans-serif;
-  color:black;
+  color:indianred;
   font-weight: bold;
 }
 #returnBook{
   margin-top: 2rem;
 }
 #showTable td{
-  border: 2px solid black;
+  border: 2px solid indianred;
 }
 #showTable th{
-  border: 2px solid black;
+  border: 2px solid white;
 }
 #showTable{
   margin-top: 2rem;
@@ -807,6 +810,8 @@ code {
   }
   #dyna{
     display: none;
+    overflow-y: auto;
+    overflow-x: auto;
     width: 80vw;
     height: 70vh;
     left: 10%;
@@ -905,7 +910,8 @@ code {
     display: none;
     left: 0%;
     margin-top: 5rem;
-    background:#e84118;
+    /*background:#e84118;*/
+    background: repeating-linear-gradient(45deg,#344860,#001a39 400px);
   }
   #load2{
     margin-left: 8rem;
