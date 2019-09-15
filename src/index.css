@@ -592,10 +592,12 @@ code {
   margin-top: 2rem;
 }
 #showTable td{
-  border: 2px solid indianred;
+  border: 2px solid black;
+  color: indianred;
 }
 #showTable th{
-  border: 2px solid white;
+  border: 2px solid black;
+  color: white;
 }
 #showTable{
   margin-top: 2rem;
@@ -904,7 +906,7 @@ code {
     width: 85vw;
     overflow-y: auto;
     overflow-x: auto;
-    border: 4px solid black;
+    border: 4px solid white;
     position: fixed;
     display: grid;
     display: none;
